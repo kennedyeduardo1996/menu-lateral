@@ -1,0 +1,148 @@
+<!doctype html>
+<html>
+<body>
+<!--<div id="carrousel">-->
+<!--<img id="prev" src="img/anterior.png"/>-->
+<!--<div id="itens">-->
+<!--<ul>-->
+<!--<li><img src="img/banner1.jpg"/></li>-->
+<!--<li><img src="img/banner2.jpg"/></li>-->
+<!--<li><img src="img/banner3.jpg"/></li>-->
+<!--<li><img src="img/banner4.jpg"/></li>-->
+<!--</ul>-->
+<!--</div>-->
+<!--<img id="next" src="img/proximo.png"/>-->
+<!--</div>	-->
+<!--<div id="carosel">-->
+<!--<button class="next">proximo</button>-->
+<!--<button class="prev">anterior</button>-->
+<!--<div class="carousel">-->
+<!--<ul>-->
+<!--<li><img src="img/banner1.jpg" alt="" /></li>-->
+<!--<li><img src="img/banner2.jpg" alt="" /></li>-->
+<!--<li><img src="img/banner3.jpg" alt="" /></li>-->
+<!--<li><img src="img/banner4.jpg" alt="" /></li>-->
+
+<!--</ul>-->
+<!--</div>&lt;!&ndash;carosel calsse&ndash;&gt;-->
+<!--</div>&lt;!&ndash; carosel div&ndash;&gt;-->
+<div id="pai">
+    <div id="test"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent non magna eu metus rhoncus accumsan sed quis nisl. Phasellus pretium sapien ut orci euismod interdum. Proin ut efficitur sapien. Donec tortor leo, gravida sed fermentum quis, tincidunt in ante. Maecenas aliquam, ligula vel vulputate volutpat, tortor metus ultricies sapien, et consectetur dui nisl vitae velit. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Etiam porttitor blandit dolor quis facilisis. Nunc sed neque in neque tempus sollicitudin. Vivamus eu interdum mi.
+
+        Etiam imperdiet lobortis urna vel tristique. Etiam ornare non urna eu faucibus. Etiam vitae massa semper, scelerisque ipsum in, ullamcorper neque. Donec ullamcorper cursus neque, et feugiat nisi condimentum in. Integer mauris leo, commodo sed ex at, tempor consectetur ex. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam et lorem porttitor, cursus eros in, commodo tellus. Curabitur faucibus mauris a est feugiat, at condimentum orci vulputate. Etiam dapibus libero quis orci consectetur, in dictum sem congue. Vestibulum consectetur nibh vitae ipsum pretium, vel interdum lorem hendrerit. Quisque pharetra erat vel gravida vestibulum.</p></div>
+    <div id="test2"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent non magna eu metus rhoncus accumsan sed quis nisl. Phasellus pretium sapien ut orci euismod interdum. Proin ut efficitur sapien. Donec tortor leo, gravida sed fermentum quis, tincidunt in ante. Maecenas aliquam, ligula vel vulputate volutpat, tortor metus ultricies sapien, et consectetur dui nisl vitae velit. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Etiam porttitor blandit dolor quis facilisis. Nunc sed neque in neque tempus sollicitudin. Vivamus eu interdum mi.
+
+        Etiam imperdiet lobortis urna vel tristique. Etiam ornare non urna eu faucibus. Etiam vitae massa semper, scelerisque ipsum in, ullamcorper neque. Donec ullamcorper cursus neque, et feugiat nisi condimentum in. Integer mauris leo, commodo sed ex at, tempor consectetur ex. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam et lorem porttitor, cursus eros in, commodo tellus. Curabitur faucibus mauris a est feugiat, at condimentum orci vulputate. Etiam dapibus libero quis orci consectetur, in dictum sem congue. Vestibulum consectetur nibh vitae ipsum pretium, vel interdum lorem hendrerit. Quisque pharetra erat vel gravida vestibulum.</p></div>
+
+
+</div>
+<style type="text/css">
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    body{
+        overflow-x: hidden;
+    }
+ #pai{
+     width: 200%;
+     background-color: blueviolet;
+ }
+    #test {
+        display: inline-block;
+        width: 40%;
+        margin-left: -40%;
+        height: 300px;
+        background-color: #438bca;
+    }
+
+    #test2 {
+        display: inline-block;
+        width: 55%;
+        height: 300px;
+        background-color: green;
+    }
+</style>
+
+
+<script>
+
+
+</script>
+
+
+</body>
+<header>
+    <title>carousel</title>
+    <!--<link rel="stylesheet" type="text/css" href="css/style.css">-->
+    <script type="text/javascript" src="js/jquery-3.3.1.js"></script>
+    <script src="js/jquery.jcarousel.js"></script>
+
+    <script src="js/carousel.js"></script>
+    <style type="text/css">
+        /*#carousel{*/
+        /*width:100%;*/
+        /*height: 200px;*/
+        /*background-color: black;*/
+        /*text-align:center;*/
+        /*}*/
+        /*#itens{*/
+        /*overflow-x: hidden;*/
+        /*width: 500px;*/
+        /*height: 200px;*/
+        /*display: inline-block;*/
+        /*}*/
+
+        /*#itens ul{*/
+        /*list-style:none;*/
+        /*position:relative;*/
+        /*margin:0;*/
+        /*margin:0;*/
+        /*display: flex;*/
+        /*width: 100%;*/
+        /*}*/
+        /*#itens ul li{*/
+        /*width:100%;*/
+        /*}*/
+        /*img{*/
+        /**/
+        /*}*/
+        /*img#prev,img#next{*/
+        /*width: 30px;*/
+        /*height: 30px;*/
+        /*}*/
+
+        li {
+            display: inline-block;
+        }
+
+        #carosel {
+            width: 556px;
+        }
+
+        #carosel img {
+            width: 200px;
+            padding: 5px;
+            border: 1px solid #ccc;
+            margin: 0 5px;
+        }
+
+        .prev {
+            float: left;
+            width: 20px;
+            height: 102px;
+            border: 0;
+            background: #069 url(img/anterior.png) no-repeat;
+        }
+
+        .next {
+            float: right;
+            width: 20px;
+            height: 102px;
+            border: 0;
+            background: #069 url(img/proximo.png) no-repeat;
+        }
+
+    </style>
+</header>
+</html>
